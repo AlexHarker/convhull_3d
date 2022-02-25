@@ -174,7 +174,7 @@ int main(int argc, const char * argv[])
         nFAIL++;
     }
     else{
-		memset(path, 0, PATH_LENGTH * sizeof(char));
+        memset(path, 0, PATH_LENGTH * sizeof(char));
         path[0] = '\0';
         strncpy(path, output_folder, strlen(output_folder));
         strcat(path, "tdesign_180_sph");
@@ -213,7 +213,7 @@ int main(int argc, const char * argv[])
         nFAIL++;
     }
     else{
-		memset(path, 0, PATH_LENGTH * sizeof(char));
+        memset(path, 0, PATH_LENGTH * sizeof(char));
         path[0] = '\0';
         strncpy(path, output_folder, strlen(output_folder));
         strcat(path, "tdesign_840_sph");
@@ -252,7 +252,7 @@ int main(int argc, const char * argv[])
         nFAIL++;
     }
     else{
-		memset(path, 0, PATH_LENGTH * sizeof(char));
+        memset(path, 0, PATH_LENGTH * sizeof(char));
         path[0] = '\0';
         strncpy(path, output_folder, strlen(output_folder));
         strcat(path, "tdesign_5100_sph");
@@ -268,7 +268,7 @@ int main(int argc, const char * argv[])
      * TEST: obj files
      *****************/
     for(o=0; o<N_OBJECT_FILES; o++){
-		memset(path, 0, PATH_LENGTH * sizeof(char));
+        memset(path, 0, PATH_LENGTH * sizeof(char));
         path[0] = '\0';
         strcat(path, obj_folder);
         strcat(path, obj_test_files[o]);
@@ -291,7 +291,7 @@ int main(int argc, const char * argv[])
             nFAIL++;
         }
         else{
-			memset(path, 0, PATH_LENGTH * sizeof(char));
+            memset(path, 0, PATH_LENGTH * sizeof(char));
             path[0] = '\0';
             strncpy(path, output_folder, strlen(output_folder));
             strcat(path, (char*)obj_test_files[o]);
